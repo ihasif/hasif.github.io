@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fw__500 {
-  font-weight: 500;
+  font-weight: 500 !important;
 }
 
 .bg__dark {
@@ -63,38 +63,23 @@ a, a:focus {
 
 /* End: Common css */
 /* Start: Navbar */
-#main__wrapper .navbar-text-light .navbar-nav > li > a:not(.btn) {
-  color: rgba(250, 250, 250, 0.9);
-}
-
-#main__wrapper .side__menu ul.navbar-nav > li:hover > a:not(.btn), #main__wrapper .side__menu ul.navbar-nav > li > a.active:not(.btn) {
-  color: #ff7800;
-  transition: all 0.2s ease;
+#header .navbar {
+  padding: 0px;
 }
 
 #main__wrapper {
   margin-left: 250px;
 }
-
-.side__header .navbar-collapse .navbar-nav {
-  flex-direction: column;
-  width: 100%;
+#main__wrapper .navbar-text-light .navbar-nav > li > a:not(.btn) {
+  color: rgba(250, 250, 250, 0.9);
 }
-
-.side__header ul.navbar-nav > li > a:not(.btn) {
-  height: auto;
-  padding: 6px 0;
+#main__wrapper .side__menu ul.navbar-nav > li:hover > a:not(.btn) {
+  color: #ff7800;
+  transition: all 0.2s ease;
 }
-
-.side__header ul.navbar-nav.social__icons > li > a:not(.btn) {
-  height: auto;
-  padding: 0px 14px;
-  font-size: 0.9rem;
-  color: #aab1b8 !important;
-}
-
-#header .navbar {
-  padding: 0px;
+#main__wrapper .side__menu ul.navbar-nav > li a.active:not(.btn) {
+  color: #ff7800;
+  transition: all 0.2s ease;
 }
 
 .side__header .side__menu {
@@ -110,20 +95,31 @@ a, a:focus {
   overflow: hidden;
   overflow-y: auto;
 }
+.side__header .navbar-collapse .navbar-nav {
+  flex-direction: column;
+  width: 100%;
+}
+.side__header ul.navbar-nav > li > a:not(.bth) {
+  height: auto;
+  padding: 6px 0;
+}
+.side__header ul.navbar-nav.social__icons > li > a:not(.btn) {
+  height: auto;
+  padding: 0px 14px;
+  font-size: 0.9rem;
+  color: #aab1b8 !important;
+}
 
-.social__icons li a > .bi.bi-facebook:hover {
+.social__icons li a .bi.bi-facebook:hover {
   color: #0572e6;
 }
-
-.social__icons li a > .bi.bi-twitter:hover {
+.social__icons li a .bi.bi-twitter:hover {
   color: #1d9bf0;
 }
-
-.social__icons li a > .bi.bi-linkedin:hover {
+.social__icons li a .bi.bi-linkedin:hover {
   color: #0a66c2;
 }
-
-.social__icons li a > .bi.bi-github:hover {
+.social__icons li a .bi.bi-github:hover {
   color: #24292f;
 }
 
@@ -135,23 +131,26 @@ a, a:focus {
 
 .home__section .home__mask {
   z-index: 1;
-}
-
-.home__section .home__mask, .home__section .home__bg {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
 }
-
-.fullscreen {
-  min-height: 100vh !important;
+.home__section .home__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
-
 .home__section .home__content {
   position: relative;
   z-index: 2;
+}
+
+.fullscreen {
+  min-height: 100vh !important;
 }
 
 .section__padding {
@@ -171,7 +170,6 @@ a, a:focus {
   color: #ff7800;
   border-color: #ff7800;
 }
-
 .btn__outline__primary:hover {
   background-color: #ff7800;
   border-color: #ff7800;
@@ -191,7 +189,6 @@ a, a:focus {
   text-align: center;
   color: #fff;
 }
-
 .scroll__down__arrow .animated {
   position: relative;
   -webkit-animation: updown 1.5s infinite;
@@ -225,10 +222,13 @@ a, a:focus {
   transform: translate(0, -40%) !important;
 }
 
+.border__end {
+  border-right: 1px dotted #e0dede;
+}
+
 .hr__hight {
   position: relative;
 }
-
 .hr__hight::before {
   content: "";
   width: 5px;
@@ -240,10 +240,9 @@ a, a:focus {
 }
 
 .list-group.list-group-flush li {
-  padding: 12px 0;
+  padding: 10px 0;
 }
-
-.list-group.list-group-flush li > span {
+.list-group.list-group-flush > span {
   color: #4c4d4d;
 }
 
@@ -253,16 +252,11 @@ a, a:focus {
   border-color: #ff7800;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
 }
-
 .btn__primary:hover {
   color: #fff;
   background-color: #ef6800;
   border-color: #ef6800;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.border__end {
-  border-right: 1px dotted #e0dede;
 }
 
 /* End: About Section */
@@ -306,7 +300,6 @@ a, a:focus {
   color: #6c757d;
   border-color: #6c757d;
 }
-
 .btn__outline__secondary:hover {
   background-color: #6c757d;
   border-color: #6c757d;
@@ -323,11 +316,9 @@ a, a:focus {
   color: #7b8084;
   white-space: nowrap !important;
 }
-
 .nav-tabs .nav-item .nav-link:not(.active):hover {
   color: #ff7800;
 }
-
 .nav-tabs .nav-item .nav-link.active::after {
   height: 2px;
   width: 100%;
@@ -339,7 +330,6 @@ a, a:focus {
   left: 0;
   transform: translateY(-3px);
 }
-
 .nav-tabs .nav-link.active {
   color: #ff7800;
 }
@@ -347,12 +337,10 @@ a, a:focus {
 .portfolio .portfolio__box {
   position: relative;
 }
-
 .portfolio .portfolio__box .portfolio__img {
   position: relative;
   overflow: hidden;
 }
-
 .portfolio .portfolio__box .portfolio__overlay {
   text-align: center;
   display: flex !important;
@@ -366,15 +354,13 @@ a, a:focus {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
-
-.portfolio .portfolio__box:hover .portfolio__overlay {
-  opacity: 1;
-}
-
 .portfolio .portfolio__box .portfolio__overlay .portfolio__overlay__content {
   width: 100%;
   margin-top: auto;
   margin-bottom: auto;
+}
+.portfolio .portfolio__box:hover .portfolio__overlay {
+  opacity: 1;
 }
 
 /* End: Portfolio Section */
@@ -382,7 +368,6 @@ a, a:focus {
 .carousel__wrap {
   margin-bottom: -3rem;
 }
-
 .carousel__wrap .carousel__slide {
   width: 10px;
   height: 10px;
@@ -390,7 +375,6 @@ a, a:focus {
   border: 2px solid #ff7800;
   background-color: transparent;
 }
-
 .carousel__wrap .carousel__slide.active {
   background: #ff7800;
 }
@@ -402,22 +386,18 @@ a, a:focus {
   border-color: #dae1e3;
   font-size: 16px;
 }
-
 .cotact__form .form__control::-moz-placeholder {
   color: #b1b4b6;
   opacity: 1;
 }
-
 .cotact__form .form__control:-ms-input-placeholder {
   color: #b1b4b6;
   opacity: 1;
 }
-
 .cotact__form .form__control::placeholder {
   color: #b1b4b6;
   opacity: 1;
 }
-
 .cotact__form .form__control:focus {
   background-color: #fff;
   border-color: rgba(255, 120, 0, 0.3);
@@ -441,12 +421,10 @@ a, a:focus {
   z-index: 99999;
   border-radius: 50%;
 }
-
 .scroll__top:hover {
   background-color: #ff7800;
   color: #fff;
 }
-
 .scroll__top:hover > .btn-scroll-top-tooltip {
   visibility: visible;
   opacity: 1;
