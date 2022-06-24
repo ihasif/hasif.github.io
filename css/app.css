@@ -62,27 +62,11 @@ a, a:focus {
 }
 
 /* End: Common css */
-/* Start: Navbar */
-#header .navbar {
-  padding: 0px;
-}
-
+/* Start: Sidebar */
 #main__wrapper {
   margin-left: 250px;
 }
-#main__wrapper .navbar-text-light .navbar-nav > li > a:not(.btn) {
-  color: rgba(250, 250, 250, 0.9);
-}
-#main__wrapper .side__menu ul.navbar-nav > li:hover > a:not(.btn) {
-  color: #ff7800;
-  transition: all 0.2s ease;
-}
-#main__wrapper .side__menu ul.navbar-nav > li a.active:not(.btn) {
-  color: #ff7800;
-  transition: all 0.2s ease;
-}
-
-.side__header .side__menu {
+#main__wrapper .side__menu {
   position: fixed;
   left: 0;
   top: 0;
@@ -95,35 +79,35 @@ a, a:focus {
   overflow: hidden;
   overflow-y: auto;
 }
-.side__header .navbar-collapse .navbar-nav {
+#main__wrapper .navbar-nav {
   flex-direction: column;
   width: 100%;
 }
-.side__header ul.navbar-nav > li > a:not(.bth) {
+#main__wrapper .navbar-nav a {
+  color: rgba(250, 250, 250, 0.9);
   height: auto;
   padding: 6px 0;
 }
-.side__header ul.navbar-nav.social__icons > li > a:not(.btn) {
+#main__wrapper .navbar-nav a.active {
+  color: #ff7800;
+  transition: all 0.2s ease;
+}
+#main__wrapper .navbar-nav li:hover a {
+  color: #ff7800;
+  transition: all 0.2s ease;
+}
+#main__wrapper .social__icons {
+  flex-direction: row !important;
+  width: auto;
+}
+#main__wrapper .social__icons a {
   height: auto;
   padding: 0px 14px;
   font-size: 0.9rem;
   color: #aab1b8 !important;
 }
 
-.social__icons li a .bi.bi-facebook:hover {
-  color: #0572e6;
-}
-.social__icons li a .bi.bi-twitter:hover {
-  color: #1d9bf0;
-}
-.social__icons li a .bi.bi-linkedin:hover {
-  color: #0a66c2;
-}
-.social__icons li a .bi.bi-github:hover {
-  color: #24292f;
-}
-
-/* End: Navbar */
+/* End: Sidebar */
 /* Start: Home Section */
 .letter__space {
   letter-spacing: 14px;

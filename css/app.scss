@@ -59,50 +59,10 @@ a, a:focus {
 /* End: Common css */
 
 
-/* Start: Navbar */
-#header {
-    .navbar {
-        padding: 0px;
-    }
-}
-
+/* Start: Sidebar */
 #main__wrapper {
     margin-left: 250px;
-
-    .navbar-text-light {
-        .navbar-nav {
-            > li {
-                > a {
-                    &:not(.btn) {
-                        color: rgba(250, 250, 250, 0.9);
-                    }
-                }
-            }
-        }
-    }
-    .side__menu {
-        ul.navbar-nav {
-            > li {
-                &:hover {
-                    > a {
-                        &:not(.btn) {
-                            color: $danger__color;
-                            transition: all 0.2s ease;  
-                        }
-                    }
-                }
-                a.active {
-                    &:not(.btn) {
-                        color: $danger__color;
-                        transition: all 0.2s ease; 
-                    }
-                }
-            }
-        }
-    }
-}
-
-.side__header {
+    
     .side__menu {
         position: fixed;
         left: 0;
@@ -116,65 +76,38 @@ a, a:focus {
         overflow: hidden;
         overflow-y: auto;
     }
-    .navbar-collapse {
-        .navbar-nav {
-            flex-direction: column;
-            width: 100%;
-        }
-    }
-    ul.navbar-nav {
-        > li {
-            > a {
-                &:not(.bth) {
-                    height: auto;
-                    padding: 6px 0;
-                }
-            }
-        }
-    }
-    ul.navbar-nav.social__icons {
-        > li {
-            > a {
-                &:not(.btn) {
-                    height: auto;
-                    padding: 0px 14px;
-                    font-size: .9rem;
-                    color: #aab1b8 !important;
-                }
-            }
-       }
-    }
-}
+    .navbar-nav{
+        flex-direction: column;
+        width: 100%;
 
-
-.social__icons {
-    li {
         a {
-            .bi.bi-facebook {
-                &:hover {
-                    color: #0572e6;
-                }
-            }
-            .bi.bi-twitter {
-                &:hover {
-                    color: #1d9bf0;
-                }
-            }
-            .bi.bi-linkedin {
-                &:hover {
-                    color: #0a66c2; 
-                }
-            }
-            .bi.bi-github {
-                &:hover {
-                    color: #24292f;
-                }
+            color: rgba(250, 250, 250, 0.9);
+            height: auto;
+            padding: 6px 0;
+
+            &.active {
+                color: $danger__color;
+                transition: all 0.2s ease; 
             }
         }
+        li:hover a {
+            color: $danger__color;
+            transition: all 0.2s ease;  
+        }
     }
-}
+    .social__icons {
+        flex-direction: row !important;
+        width: auto;
 
-/* End: Navbar */
+        a {
+            height: auto;
+            padding: 0px 14px;
+            font-size: .9rem;
+            color: #aab1b8 !important;
+        }
+    }    
+}
+/* End: Sidebar */
 
 
 /* Start: Home Section */
