@@ -1,6 +1,5 @@
+@import url("../scss/_variables.scss");
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;500;700&display=swap");
-@import url(../scss/_variables);
-/* Start: Common css */
 * {
   margin: 0;
   padding: 0;
@@ -129,7 +128,6 @@ a, a:focus {
 }
 
 /* End: Navbar */
-
 /* Start: Home Section */
 .letter__space {
   letter-spacing: 14px;
@@ -222,7 +220,6 @@ a, a:focus {
   }
 }
 /* End: Home Section*/
-
 /* Start: About Section */
 .translate__middle {
   transform: translate(0, -40%) !important;
@@ -240,6 +237,10 @@ a, a:focus {
   position: absolute;
   top: 14px;
   left: 0;
+}
+
+.list-group.list-group-flush li {
+  padding: 12px 0;
 }
 
 .list-group.list-group-flush li > span {
@@ -265,7 +266,6 @@ a, a:focus {
 }
 
 /* End: About Section */
-
 /* Start: Service Section */
 .featured__box {
   box-sizing: border-box;
