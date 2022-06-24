@@ -129,6 +129,7 @@ a, a:focus {
 }
 
 /* End: Navbar */
+
 /* Start: Home Section */
 .letter__space {
   letter-spacing: 14px;
@@ -221,6 +222,7 @@ a, a:focus {
   }
 }
 /* End: Home Section*/
+
 /* Start: About Section */
 .translate__middle {
   transform: translate(0, -40%) !important;
@@ -238,10 +240,6 @@ a, a:focus {
   position: absolute;
   top: 14px;
   left: 0;
-}
-
-.list-group.list-group-flush li {
-  padding: 12px 0;
 }
 
 .list-group.list-group-flush li > span {
@@ -267,6 +265,7 @@ a, a:focus {
 }
 
 /* End: About Section */
+
 /* Start: Service Section */
 .featured__box {
   box-sizing: border-box;
