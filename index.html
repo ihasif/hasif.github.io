@@ -10,10 +10,11 @@
     <title>Portfolio Template</title>
 </head>
 
-<body class="primary__menu" data-bs-spy="scroll" data-bs-target="#header" data-bs-offset="80" tabindex="-2">
+<body data-bs-spy="scroll" data-bs-target="#header" data-bs-offset="80" tabindex="-2">
+
     <div id="main__wrapper">
         <!-- Naver Section -->
-        <aside id="header" class="sticky-top side__header">
+        <aside id="header" class="sticky-top">
             <nav class="navbar navbar-expand-lg navbar-text-light border-bottom-0 bg__dark side__menu">
                 <div class="container-fluid position-relative h-100 flex-lg-column ps-3 px-lg-3 pt-lg-3 pb-lg-2">
                     <a class="mb-lg-auto" href="#">
@@ -22,11 +23,10 @@
                                 <img class="img-fluid rounded-pill d-block" src="image/hasif.jpg" alt="">
                             </span>
                         </span>
-                        <h1 class="text-center text-white fs-5 fw__500 mt-2 mb-0">Hasiful Islam</h1>
+                        <h1 class="text-center text-white fs-6 fw__500 text-uppercase mt-0 mt-lg-3 mb-0">Hasiful Islam</h1>
+                        <h3 class="text-center text__green fw-light text-uppercase fs__ex mt-2 mb-0">Web Designer</h3>
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    
                     <div class="collapse navbar-collapse w-100 mb-lg-auto" id="navbarNav">
                         <ul class="navbar-nav text-lg-center mb-lg-auto py-lg-3">
                             <li class="nav-item">
@@ -52,21 +52,28 @@
                             </li>
                         </ul>
                     </div>
-                    <ul class="social__icons navbar-nav">
+                    
+                    <ul class="social__icons ms-auto d-flex  ms-lg-0 navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a></li>
                         <li class="nav-item"><a class="nav-link" href="https://twitter.com/home?lang=en"><i class="bi bi-twitter"></i></a></li>
                         <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/feed/"><i class="bi bi-linkedin"></i></a></li>
                         <li class="nav-item"><a class="nav-link" href="https://github.com/"><i class="bi bi-github"></i></a></li>
                     </ul>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="bi bi-justify"></span>
+                    </button>
+
                 </div>
             </nav>
         </aside>
 
-        <!-- Home__section -->
-        <section id="home" class="home__section">
-            <div class="home__mask opacity__8 bg__dark"></div>
+        <!-- Start: Home Section -->
+        <section id="home" class="home__section position-relative">
+            <div class="home__mask bg__dark"></div>
             <div class="home__bg" style='background-image: url("./image/intro-bg.jpg"); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center 0px;'></div>
-            <div class="home__content fullscreen d-flex section__padding">
+            
+            <div class="home__content d-flex section__padding">
                 <div class="container my-auto">
                     <div class="row">
                         <div class="col-12 text-center">
@@ -80,22 +87,23 @@
                 <a class="scroll__down__arrow smooth__scroll" href="#about"><span class="animated"><i class="bi bi-chevron-down"></i></span></a>
             </div>
         </section>
+        <!-- End: Home Section -->
 
 
-        <!-- About Section -->
+        <!-- Start: About Section -->
         <section id="about" class="section__padding">
             <div class="container px-lg-5">
-                <div class="mb-5">
-                    <h2 class="fs__8 text__light fw-bold text-uppercase position-absolute top-0 translate__middle opacity__4 w-100 mb-0">About</h2>
-                    <p class="mb-0 fs-1 fw__500 text-dark hr__hight ps-4">About My Self</p>
-                </div>
+                
+                <h2 class="fs__8 text__light fw-bold text-uppercase position-absolute top-0 translate__middle opacity__4 w-100 mb-0">About</h2>
+                <p class="mb-0 fs-1 fw__500 text-dark hr__hight ps-4 mb-5">About My Self</p>
+
                 <div class="row gy-5">
-                    <div class="col-7">
+                    <div class="col-lg-7 col-xl-8 text-center text-lg-start">
                         <h2 class="fs-3 fw__500 mb-4">I'm <span class="text__danger">Hasiful Islam</span> a Web Developer</h2>
                         <p class="lh-base mb-4">I help you build brand for your business at an affordable price. Thousands of clients have procured exceptional results while working with our dedicated team. when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         <p class="lh-base">Delivering work within time and budget which meets client,s requirements is our moto. Lorem Ipsum has been the industry's standard dummy text ever when an unknown printer took a galley. Lorem Ipsum has been the industry's standard dummy text ever.</p>
                     </div>
-                    <div class="col-5">
+                    <div class="col-lg-5 col-xl-4">
                         <div class="ps-lg-4">
                             <ul class="list-group list-group-flush mb-2">
                                 <li class="list-group-item px-0"><span class="fw__500 me-2">Name:</span>Hasiful Islam</li>
@@ -109,25 +117,25 @@
                 </div>
                 <div class="mt-5 overflow-hidden">
                     <div class="row">
-                        <div class="col-3 border__end">
+                        <div class="col-6 col-md-3 border-end">
                             <div class="py-3 text-center">
                                 <h4 class="display-5 fw__500 text-muted mb-0"><span class="counter" data-from="0" data-to="10">10</span>+</h4>
                                 <p class="mb-0">Years Experiance</p>
                             </div>
                         </div>
-                        <div class="col-3 border__end">
+                        <div class="col-6 col-md-3 border-end">
                             <div class="py-3 text-center">
                                 <h4 class="display-5 fw__500 text-muted mb-0"><span class="counter" data-from="0" data-to="10">250</span>+</h4>
                                 <p class="mb-0">Happy Clients</p>
                             </div>
                         </div>
-                        <div class="col-3 border__end">
+                        <div class="col-6 col-md-3 border-end">
                             <div class="py-3 text-center">
                                 <h4 class="display-5 fw__500 text-muted mb-0"><span class="counter" data-from="0" data-to="10">650</span>+</h4>
                                 <p class="mb-0">Projects Done</p>
                             </div>
                         </div>
-                        <div class="col-3 border__end">
+                        <div class="col-6 col-md-3 border__end">
                             <div class="py-3 text-center">
                                 <h4 class="display-5 fw__500 text-muted mb-0"><span class="counter" data-from="0" data-to="10">38</span></h4>
                                 <p class="mb-0">Get Awards</p>
@@ -137,19 +145,21 @@
                 </div>
             </div>
         </section>
+        <!-- End: About Section -->
 
-        <!-- Services Section -->
+
+        <!-- Start: Services Section -->
         <section id="services" class="section__padding bg-light">
             <div class="container px-lg-5">
-                <div class="mb-5">
-                    <h2 class="fs__8 text__light fw-bold text-uppercase position-absolute top-0 translate__middle opacity__4 w-100 mb-0">Service</h2>
-                    <p class="mb-0 fs-1 fw__500 text-dark hr__hight ps-4">What I Do?</p>
-                </div>
+                
+                <h2 class="fs__8 text__light fw-bold text-uppercase position-absolute top-0 translate__middle opacity__4 w-100 mb-0">Service</h2>
+                <p class="mb-0 fs-1 fw__500 text-dark hr__hight ps-4 mb-5">What I Do?</p>
+                
                 <div class="row">
-                    <div class="col-11">
+                    <div class="col-lg-11">
                         <div class="row gx-5">
-                            <div class="col-6">
-                                <div class="featured__box  style__1 mb-5">
+                            <div class="col-md-6">
+                                <div class="featured__box mb-5">
                                     <div class="featured__box__icon bg-white shadow-sm">
                                         <i class="bi bi-palette-fill text__danger"></i>
                                     </div>
@@ -157,8 +167,8 @@
                                     <p>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="featured__box  style__1 mb-5">
+                            <div class="col-md-6">
+                                <div class="featured__box mb-5">
                                     <div class="featured__box__icon bg-white shadow-sm">
                                         <i class="bi bi-laptop-fill text__danger"></i>
                                     </div>
@@ -166,8 +176,8 @@
                                     <p>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="featured__box  style__1 mb-5">
+                            <div class="col-md-6">
+                                <div class="featured__box mb-5">
                                     <div class="featured__box__icon bg-white shadow-sm">
                                         <i class="bi bi-brush-fill text__danger"></i>
                                     </div>
@@ -175,8 +185,8 @@
                                     <p>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="featured__box  style__1 mb-5">
+                            <div class="col-md-6">
+                                <div class="featured__box mb-5">
                                     <div class="featured__box__icon bg-white shadow-sm">
                                         <i class="bi bi-pencil-fill text__danger"></i>
                                     </div>
@@ -184,8 +194,8 @@
                                     <p>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="featured__box  style__1 mb-5">
+                            <div class="col-md-6">
+                                <div class="featured__box mb-5">
                                     <div class="featured__box__icon bg-white shadow-sm">
                                         <i class="bi bi-volume-up-fill text__danger"></i>
                                     </div>
@@ -193,8 +203,8 @@
                                     <p>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="featured__box  style__1 mb-5">
+                            <div class="col-md-6">
+                                <div class="featured__box mb-5">
                                     <div class="featured__box__icon bg-white shadow-sm">
                                         <i class="bi bi-graph-up text__danger"></i>
                                     </div>
@@ -207,17 +217,18 @@
                 </div>
             </div>
         </section>
+        <!-- End: Services Section -->
 
 
-        <!-- Resume Section -->
+        <!-- Start: Resume Section -->
         <section id="resume" class="section__padding">
             <div class="container px-lg-5">
-                <div class="mb-5">
-                    <h2 class="fs__8 text__light fw-bold text-uppercase position-absolute top-0 translate__middle opacity__4 w-100 mb-0">Summary</h2>
-                    <p class="mb-0 fs-1 fw__500 text-dark hr__hight ps-4">Resume</p>
-                </div>
+
+                <h2 class="fs__8 text__light fw-bold text-uppercase position-absolute top-0 translate__middle opacity__4 w-100 mb-0">Summary</h2>
+                <p class="mb-0 fs-1 fw__500 text-dark hr__hight ps-4 mb-5">Resume</p>
+
                 <div class="row gx-5">
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <h2 class="fs-4 fw__500 mb-4">My Education</h2>
                         <div class="bg-white border rounded p-4 mb-4">
                             <p class="badge bg__danger fw-normal fs__ex">2000 - 2004</p>
@@ -238,7 +249,7 @@
                             <p class="mb-0">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <h2 class="fs-4 fw__500 mb-4">My Experience</h2>
                         <div class="bg-white border rounded p-4 mb-4">
                             <p class="badge bg__danger fw-normal fs__ex">2012 - 2013</p>
@@ -263,31 +274,31 @@
 
                 <h2 class="my-4 fs-4 fw__500">My Skills</h2>
                 <div class="row gx-5">
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <p class="text-dark fw-500 text-start mb-2">Web Design <span class="float-end">65%</span></p>
-                        <div class="progress mb-4">
+                        <div class="progress mb-4" style="height: 9px;">
                             <div class="progress-bar bg__danger" role="progressbar" style="width: 65%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                         </div> 
                         <p class="text-dark fw-500 text-start mb-2">HTML/CSS <span class="float-end">95%</span></p>
-                        <div class="progress mb-4">
+                        <div class="progress mb-4" style="height: 9px;">
                             <div class="progress-bar bg__danger" role="progressbar" style="width: 95%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <p class="text-dark fw-500 text-start mb-2">JavaScript  <span class="float-end">80%</span></p>
-                        <div class="progress mb-4">
+                        <div class="progress mb-4" style="height: 9px;">
                             <div class="progress-bar bg__danger" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>                         
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <p class="text-dark fw-500 text-start mb-2">React JS <span class="float-end">70%</span></p>
-                        <div class="progress mb-4">
+                        <div class="progress mb-4" style="height: 9px;">
                             <div class="progress-bar bg__danger" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                         </div> 
                         <p class="text-dark fw-500 text-start mb-2">Angular Js <span class="float-end">60%</span></p>
-                        <div class="progress mb-4">
+                        <div class="progress mb-4" style="height: 9px;">
                             <div class="progress-bar bg__danger" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <p class="text-dark fw-500 text-start mb-2">Bootstrap  <span class="float-end">99%</span></p>
-                        <div class="progress mb-4">
+                        <div class="progress mb-4" style="height: 9px;">
                             <div class="progress-bar bg__danger" role="progressbar" style="width: 99%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>                         
                     </div>
@@ -297,15 +308,16 @@
                 </div>
             </div>
         </section>
+        <!-- End: Resume Section -->
 
 
-        <!-- Portfolio Section -->
+        <!-- Start: Portfolio Section -->
         <section id="Portfolio" class="section__padding bg-light">
             <div class="container px-lg-5">
-                <div class="mb-5">
-                    <h2 class="fs__8 text__light fw-bold text-uppercase position-absolute top-0 translate__middle opacity__4 w-100 mb-0">Portfolio</h2>
-                    <p class="mb-0 fs-1 fw__500 text-dark hr__hight ps-4">My Work</p>
-                </div>
+
+                <h2 class="fs__8 text__light fw-bold text-uppercase position-absolute top-0 translate__middle opacity__4 w-100 mb-0">Portfolio</h2>
+                <p class="mb-0 fs-1 fw__500 text-dark hr__hight ps-4 mb-5">My Work</p>
+
                 <div class="row">
                     <ul class="nav nav-tabs justify-content-center border-0 mb-5" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
@@ -322,94 +334,80 @@
                         </li>
                     </ul>       
                     <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active portfolio" id="all-tab-pane" role="tabpanel" aria-labelledby="all-tab" tabindex="0">
+                        <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel" aria-labelledby="all-tab" tabindex="0">
                             <div class="row g-4">
-                                <div class="col-4">
-                                    <div class="portfolio__box mb-4">
-                                        <div class="rounded portfolio__img">
-                                            <img class="img-fluid d-block rounded" src="image/project-1.jpg" alt="">
-                                            <div class="portfolio__overlay">
-                                                <a href="#"></a>
-                                                <div class="portfolio__overlay__content">
-                                                    <h5 class="text-white fw-semibold">Project Title</h5>
-                                                    <span class="text__light">View Page</span>
-                                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="rounded portfolio__img mb-4">
+                                        <img class="img-fluid d-block rounded" src="image/project-1.jpg" alt="">
+                                        <div class="portfolio__overlay">
+                                            <a href="#"></a>
+                                            <div class="w-100 my-auto">
+                                                <h5 class="text-white fw-semibold">Project Title</h5>
+                                                <span class="text__light">View Page</span>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="portfolio__box">
-                                        <div class="rounded portfolio__img">
-                                            <img class="img-fluid d-block rounded" src="image/project-4.jpg" alt="">
-                                            <div class="portfolio__overlay">
-                                                <a href="#"></a>
-                                                <div class="portfolio__overlay__content">
-                                                    <h5 class="text-white fw-semibold">Project Title</h5>
-                                                    <span class="text__light">View Page</span>
-                                                </div>
+                                    <div class="rounded portfolio__img">
+                                        <img class="img-fluid d-block rounded" src="image/project-4.jpg" alt="">
+                                        <div class="portfolio__overlay">
+                                            <a href="#"></a>
+                                            <div class="w-100 my-auto">
+                                                <h5 class="text-white fw-semibold">Project Title</h5>
+                                                <span class="text__light">View Page</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
-                                    <div class="portfolio__box mb-4">
-                                        <div class="rounded portfolio__img">
-                                            <img class="img-fluid d-block rounded" src="image/project-2.jpg" alt="">
-                                            <div class="portfolio__overlay">
-                                                <a href="#"></a>
-                                                <div class="portfolio__overlay__content">
-                                                    <h5 class="text-white fw-semibold">Project Title</h5>
-                                                    <span class="text__light">View Page</span>
-                                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="rounded portfolio__img mb-4">
+                                        <img class="img-fluid d-block rounded" src="image/project-2.jpg" alt="">
+                                        <div class="portfolio__overlay">
+                                            <a href="#"></a>
+                                            <div class="w-100 my-auto">
+                                                <h5 class="text-white fw-semibold">Project Title</h5>
+                                                <span class="text__light">View Page</span>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="portfolio__box">
-                                        <div class="rounded portfolio__img">
-                                            <img class="img-fluid d-block rounded" src="image/project-7.jpg" alt="">
-                                            <div class="portfolio__overlay">
-                                                <a href="#"></a>
-                                                <div class="portfolio__overlay__content">
-                                                    <h5 class="text-white fw-semibold">Project Title</h5>
-                                                    <span class="text__light">View Page</span>
-                                                </div>
+                                    <div class="rounded portfolio__img">
+                                        <img class="img-fluid d-block rounded" src="image/project-7.jpg" alt="">
+                                        <div class="portfolio__overlay">
+                                            <a href="#"></a>
+                                            <div class="w-100 my-auto">
+                                                <h5 class="text-white fw-semibold">Project Title</h5>
+                                                <span class="text__light">View Page</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
-                                    <div class="portfolio__box mb-4">
-                                        <div class="rounded portfolio__img">
-                                            <img class="img-fluid d-block rounded" src="image/project-3.jpg" alt="">
-                                            <div class="portfolio__overlay">
-                                                <a href="#"></a>
-                                                <div class="portfolio__overlay__content">
-                                                    <h5 class="text-white fw-semibold">Project Title</h5>
-                                                    <span class="text__light">View Page</span>
-                                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="rounded portfolio__img mb-4">
+                                        <img class="img-fluid d-block rounded" src="image/project-3.jpg" alt="">
+                                        <div class="portfolio__overlay">
+                                            <a href="#"></a>
+                                            <div class="w-100 my-auto">
+                                                <h5 class="text-white fw-semibold">Project Title</h5>
+                                                <span class="text__light">View Page</span>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="portfolio__box mb-4">
-                                        <div class="rounded portfolio__img">
-                                            <img class="img-fluid d-block rounded" src="image/project-5.jpg" alt="">
-                                            <div class="portfolio__overlay">
-                                                <a href="#"></a>
-                                                <div class="portfolio__overlay__content">
-                                                    <h5 class="text-white fw-semibold">Project Title</h5>
-                                                    <span class="text__light">View Page</span>
-                                                </div>
+                                    <div class="rounded portfolio__img mb-4">
+                                        <img class="img-fluid d-block rounded" src="image/project-5.jpg" alt="">
+                                        <div class="portfolio__overlay">
+                                            <a href="#"></a>
+                                            <div class="w-100 my-auto">
+                                                <h5 class="text-white fw-semibold">Project Title</h5>
+                                                <span class="text__light">View Page</span>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="portfolio__box">
-                                        <div class="rounded portfolio__img">
-                                            <img class="img-fluid d-block rounded" src="image/project-6.jpg" alt="">
-                                            <div class="portfolio__overlay">
-                                                <a href="#"></a>
-                                                <div class="portfolio__overlay__content">
-                                                    <h5 class="text-white fw-semibold">Project Title</h5>
-                                                    <span class="text__light">View Page</span>
-                                                </div>
+                                    <div class="rounded portfolio__img">
+                                        <img class="img-fluid d-block rounded" src="image/project-6.jpg" alt="">
+                                        <div class="portfolio__overlay">
+                                            <a href="#"></a>
+                                            <div class="w-100 my-auto">
+                                                <h5 class="text-white fw-semibold">Project Title</h5>
+                                                <span class="text__light">View Page</span>
                                             </div>
                                         </div>
                                     </div>
@@ -418,44 +416,38 @@
                         </div>
                         <div class="tab-pane fade portfolio" id="design-tab-pane" role="tabpanel" aria-labelledby="design-tab" tabindex="0">
                             <div class="row g-4">
-                                <div class="col-4">
-                                    <div class="portfolio__box">
-                                        <div class="rounded portfolio__img">
-                                            <img class="img-fluid d-block rounded" src="image/project-2.jpg" alt="">
-                                            <div class="portfolio__overlay">
-                                                <a href="#"></a>
-                                                <div class="portfolio__overlay__content">
-                                                    <h5 class="text-white fw-semibold">Project Title</h5>
-                                                    <span class="text__light">View Page</span>
-                                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="rounded portfolio__img">
+                                        <img class="img-fluid d-block rounded" src="image/project-2.jpg" alt="">
+                                        <div class="portfolio__overlay">
+                                            <a href="#"></a>
+                                            <div class="w-100 my-auto">
+                                                <h5 class="text-white fw-semibold">Project Title</h5>
+                                                <span class="text__light">View Page</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
-                                    <div class="portfolio__box mb-4">
-                                        <div class="rounded portfolio__img">
-                                            <img class="img-fluid d-block rounded" src="image/project-5.jpg" alt="">
-                                            <div class="portfolio__overlay">
-                                                <a href="#"></a>
-                                                <div class="portfolio__overlay__content">
-                                                    <h5 class="text-white fw-semibold">Project Title</h5>
-                                                    <span class="text__light">View Page</span>
-                                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="rounded portfolio__img">
+                                        <img class="img-fluid d-block rounded" src="image/project-5.jpg" alt="">
+                                        <div class="portfolio__overlay">
+                                            <a href="#"></a>
+                                            <div class="w-100 my-auto">
+                                                <h5 class="text-white fw-semibold">Project Title</h5>
+                                                <span class="text__light">View Page</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
-                                    <div class="portfolio__box mb-4">
-                                        <div class="rounded portfolio__img">
-                                            <img class="img-fluid d-block rounded" src="image/project-7.jpg" alt="">
-                                            <div class="portfolio__overlay">
-                                                <a href="#"></a>
-                                                <div class="portfolio__overlay__content">
-                                                    <h5 class="text-white fw-semibold">Project Title</h5>
-                                                    <span class="text__light">View Page</span>
-                                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="rounded portfolio__img">
+                                        <img class="img-fluid d-block rounded" src="image/project-7.jpg" alt="">
+                                        <div class="portfolio__overlay">
+                                            <a href="#"></a>
+                                            <div class="w-100 my-autot">
+                                                <h5 class="text-white fw-semibold">Project Title</h5>
+                                                <span class="text__light">View Page</span>
                                             </div>
                                         </div>
                                     </div>
@@ -464,44 +456,38 @@
                         </div>
                         <div class="tab-pane fade portfolio" id="brand-tab-pane" role="tabpanel" aria-labelledby="brand-tab" tabindex="0">
                             <div class="row g-4">
-                                <div class="col-4">
-                                    <div class="portfolio__box">
-                                        <div class="rounded portfolio__img">
-                                            <img class="img-fluid d-block rounded" src="image/project-1.jpg" alt="">
-                                            <div class="portfolio__overlay">
-                                                <a href="#"></a>
-                                                <div class="portfolio__overlay__content">
-                                                    <h5 class="text-white fw-semibold">Project Title</h5>
-                                                    <span class="text__light">View Page</span>
-                                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="rounded portfolio__img">
+                                        <img class="img-fluid d-block rounded" src="image/project-1.jpg" alt="">
+                                        <div class="portfolio__overlay">
+                                            <a href="#"></a>
+                                            <div class="w-100 my-auto">
+                                                <h5 class="text-white fw-semibold">Project Title</h5>
+                                                <span class="text__light">View Page</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
-                                    <div class="portfolio__box mb-4">
-                                        <div class="rounded portfolio__img">
-                                            <img class="img-fluid d-block rounded" src="image/project-4.jpg" alt="">
-                                            <div class="portfolio__overlay">
-                                                <a href="#"></a>
-                                                <div class="portfolio__overlay__content">
-                                                    <h5 class="text-white fw-semibold">Project Title</h5>
-                                                    <span class="text__light">View Page</span>
-                                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="rounded portfolio__img">
+                                        <img class="img-fluid d-block rounded" src="image/project-4.jpg" alt="">
+                                        <div class="portfolio__overlay">
+                                            <a href="#"></a>
+                                            <div class="w-100 my-auto">
+                                                <h5 class="text-white fw-semibold">Project Title</h5>
+                                                <span class="text__light">View Page</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
-                                    <div class="portfolio__box mb-4">
-                                        <div class="rounded portfolio__img">
-                                            <img class="img-fluid d-block rounded" src="image/project-6.jpg" alt="">
-                                            <div class="portfolio__overlay">
-                                                <a href="#"></a>
-                                                <div class="portfolio__overlay__content">
-                                                    <h5 class="text-white fw-semibold">Project Title</h5>
-                                                    <span class="text__light">View Page</span>
-                                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="rounded portfolio__img">
+                                        <img class="img-fluid d-block rounded" src="image/project-6.jpg" alt="">
+                                        <div class="portfolio__overlay">
+                                            <a href="#"></a>
+                                            <div class="w-100 my-auto">
+                                                <h5 class="text-white fw-semibold">Project Title</h5>
+                                                <span class="text__light">View Page</span>
                                             </div>
                                         </div>
                                     </div>
@@ -510,44 +496,38 @@
                         </div>
                         <div class="tab-pane fade portfolio" id="photos-tab-pane" role="tabpanel" aria-labelledby="photos-tab" tabindex="0">
                             <div class="row g-4">
-                                <div class="col-4">
-                                    <div class="portfolio__box">
-                                        <div class="rounded portfolio__img">
-                                            <img class="img-fluid d-block rounded" src="image/project-3.jpg" alt="">
-                                            <div class="portfolio__overlay">
-                                                <a href="#"></a>
-                                                <div class="portfolio__overlay__content">
-                                                    <h5 class="text-white fw-semibold">Project Title</h5>
-                                                    <span class="text__light">View Page</span>
-                                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="rounded portfolio__img">
+                                        <img class="img-fluid d-block rounded" src="image/project-3.jpg" alt="">
+                                        <div class="portfolio__overlay">
+                                            <a href="#"></a>
+                                            <div class="w-100 my-auto">
+                                                <h5 class="text-white fw-semibold">Project Title</h5>
+                                                <span class="text__light">View Page</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
-                                    <div class="portfolio__box mb-4">
-                                        <div class="rounded portfolio__img">
-                                            <img class="img-fluid d-block rounded" src="image/project-4.jpg" alt="">
-                                            <div class="portfolio__overlay">
-                                                <a href="#"></a>
-                                                <div class="portfolio__overlay__content">
-                                                    <h5 class="text-white fw-semibold">Project Title</h5>
-                                                    <span class="text__light">View Page</span>
-                                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="rounded portfolio__img">
+                                        <img class="img-fluid d-block rounded" src="image/project-4.jpg" alt="">
+                                        <div class="portfolio__overlay">
+                                            <a href="#"></a>
+                                            <div class="w-100 my-auto">
+                                                <h5 class="text-white fw-semibold">Project Title</h5>
+                                                <span class="text__light">View Page</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
-                                    <div class="portfolio__box mb-4">
-                                        <div class="rounded portfolio__img">
-                                            <img class="img-fluid d-block rounded" src="image/project-7.jpg" alt="">
-                                            <div class="portfolio__overlay">
-                                                <a href="#"></a>
-                                                <div class="portfolio__overlay__content">
-                                                    <h5 class="text-white fw-semibold">Project Title</h5>
-                                                    <span class="text__light">View Page</span>
-                                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-4">
+                                    <div class="rounded portfolio__img">
+                                        <img class="img-fluid d-block rounded" src="image/project-7.jpg" alt="">
+                                        <div class="portfolio__overlay">
+                                            <a href="#"></a>
+                                            <div class="w-100 my-auto">
+                                                <h5 class="text-white fw-semibold">Project Title</h5>
+                                                <span class="text__light">View Page</span>
                                             </div>
                                         </div>
                                     </div>
@@ -558,15 +538,15 @@
                 </div>
             </div>
         </section>
+        <!-- End: Portfolio Section -->
 
-
-        <!-- Testimonial Section -->
+        <!-- Start: Testimonial Section -->
         <section id="testimonial" class="section__padding">
             <div class="container px-lg-5 mb-5">
-                <div class="mb-5">
-                    <h2 class="fs__8 text__light fw-bold text-uppercase position-absolute top-0 translate__middle opacity__4 w-100 mb-0">Testimonial</h2>
-                    <p class="mb-0 fs-1 fw__500 text-dark hr__hight ps-4">Client Speak</p>
-                </div>
+
+                <h2 class="fs__8 text__light fw-bold text-uppercase position-absolute top-0 translate__middle opacity__4 w-100 mb-0">Testimonial</h2>
+                <p class="mb-0 fs-1 fw__500 text-dark hr__hight ps-4 mb-5">Client Speak</p>
+
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                     <div class="carousel-indicators carousel__wrap">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active carousel__slide" aria-current="true" aria-label="Slide 1"></button>
@@ -575,7 +555,7 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-xsm-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                     <div class="bg-light rounded p-5">
                                         <div class="d-flex align-items-center mt-auto mb-4"> <img class="img-fluid rounded-circle border d-inline-block w-auto" src="image/team-2.jpg" alt="">
                                             <p class="ms-3 mb-0"><strong class="d-block text-dark">Dennis Jacques</strong> <span class="text-muted">User from USA</span></p>
@@ -584,10 +564,10 @@
                                         <img class="img-fluid" src="image/five-star.png" alt="" width="90px">
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-md-6 col-lg-6 col-xl-6 d-none d-md-block">
                                     <div class="bg-light rounded p-5">
                                         <div class="d-flex align-items-center mt-auto mb-4"> <img class="img-fluid rounded-circle border d-inline-block w-auto" src="image/team-1.jpg" alt="">
-                                            <p class="ms-3 mb-0"><strong class="d-block text-dark">Jay Shah</strong> <span class="text-muted">Founder at Icomatic Pvt Ltd</span></p>
+                                            <p class="ms-3 mb-0"><strong class="d-block text-dark">Jay Shah</strong> <span class="text-muted">Founder at Icomatic</span></p>
                                         </div>
                                         <p class="text-dark mb-4">“Only trying it out since a few days. But up to now excellent. Seems to work flawlessly. priced simply dummy text of the printing and typesetting industry.”</p>
                                         <img class="img-fluid" src="image/five-star.png" alt="" width="90px">
@@ -597,7 +577,7 @@
                         </div>
                         <div class="carousel-item">
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-xsm-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                     <div class="bg-light rounded p-5">
                                         <div class="d-flex align-items-center mt-auto mb-4"> <img class="img-fluid rounded-circle border d-inline-block w-auto" src="image/team-3.jpg" alt="">
                                             <p class="ms-3 mb-0"><strong class="d-block text-dark">Chris Tom</strong> <span class="text-muted">User from UK</span></p>
@@ -606,7 +586,7 @@
                                         <img class="img-fluid" src="image/five-star.png" alt="" width="90px">
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-md-6 col-lg-6 col-xl-6 d-none d-md-block">
                                     <div class="bg-light rounded p-5">
                                         <div class="d-flex align-items-center mt-auto mb-4"> <img class="img-fluid rounded-circle border d-inline-block w-auto" src="image/team-4.jpg" alt="">
                                             <p class="ms-3 mb-0"><strong class="d-block text-dark">Patrick Cary</strong> <span class="text-muted">Freelancer from USA</span></p>
@@ -621,19 +601,20 @@
                 </div>
             </div>
         </section>
+        <!-- End: Testimonial Section -->
 
 
-        <!-- Contact Section -->
-        <section id="contact" class="section__padding bg-light contact">
+        <!-- Start: Contact Section -->
+        <section id="contact" class="section__padding bg-light">
             <div class="container px-lg-5">
-                <div class="mb-5">
-                    <h2 class="fs__8 text__light fw-bold text-uppercase position-absolute top-0 translate__middle opacity__4 w-100 mb-0">Contact</h2>
-                    <p class="mb-0 fs-1 fw__500 text-dark text-center"> <span class="hr__hight pe-4"></span> Get in Touch</p>
-                </div>
+
+                <h2 class="fs__8 text__light fw-bold text-uppercase position-absolute top-0 translate__middle opacity__4 w-100 mb-0">Contact</h2>
+                <p class="mb-0 fs-1 fw__500 text-dark text-center mb-5"> <span class="hr__hight pe-4"></span> Get in Touch</p>
+
                 <div class="row gy-5">
-                    <div class="col-10 mx-auto">
+                    <div class="col-md-10 mx-auto">
                         <h2 class="mb-3 fs-5 fw__500 text-uppercase">Send us a note</h2>
-                        <form class="cotact__form">
+                        <form>
                             <div class="row g-4">
                                 <div class="col-xl-6">
                                     <input name="name" type="text" class="form-control form__control" required="" placeholder="Name">
@@ -653,16 +634,21 @@
                 </div>
             </div>
         </section>
+        <!-- End: Contact Section -->
 
 
-        <!-- Footer Section -->
+        <!-- Start: Footer Section -->
         <footer class="py-4 footer__content">
             <p class="fs__ex mb-0 text-center">Copyright © 2022 All Rights Reserved.</p>
         </footer>
+        <!-- End: Footer Section -->
+
+        <!-- Start: Top To Bottom -->
         <a class="text-white scroll__top smooth__scroll" href="#main__wrapper">
-            <span class="tt btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+            <span class="tt btn-tooltip text-muted fs-sm me-2">Top</span>
             <i class="bi bi-chevron-up"></i>
         </a>
+        <!-- End: Top To Bottom -->
     </div>
 
     <!-- javascript -->
@@ -670,6 +656,7 @@
     <script src="js/custom.js"></script>
     <script src="js/jquery-2.2.3.slim.min.js"></script>
     <script>
+
         //Back__to__top
         (function($) {
         'use strict';
