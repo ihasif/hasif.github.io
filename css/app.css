@@ -122,12 +122,15 @@ a, a:focus {
   top: 0;
   width: 250px;
   height: 100% !important;
-  background: #fff;
+  background: #111418;
   border-right: 1px solid rgba(0, 0, 0, 0.07);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.065);
   z-index: 2;
   overflow: hidden;
   overflow-y: auto;
+}
+#main__wrapper .side__menu .shape__img {
+  background-color: #323539;
 }
 #main__wrapper .navbar-nav {
   flex-direction: column;
@@ -160,7 +163,7 @@ a, a:focus {
 /* End: Sidebar */
 /* Start: Home Section */
 #home .home__mask {
-  background-color: rgba(37, 43, 51, 0.5);
+  background-color: rgba(37, 43, 51, 0.9);
   z-index: 1;
   position: absolute;
   top: 0;
@@ -404,6 +407,14 @@ a, a:focus {
     right: 0;
     z-index: 1000;
     background: rgba(0, 0, 0, 0.95);
+    padding: 1rem;
+  }
+  #main__wrapper .navbar-collapse li {
+    display: block;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.15);
+  }
+  #main__wrapper .navbar-collapse li:last-child {
+    border: 0;
   }
 
   .section__padding .translate__middle {
